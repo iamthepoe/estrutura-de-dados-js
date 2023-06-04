@@ -17,4 +17,18 @@ describe('stackObject', () => {
 		assert.equal(stack.isEmpty(), false);
 		assert.equal(stack.size(), 3);
 	});
+
+	it('should remove an element from the top of the stack and return it', () => {
+		assert.equal(stack.pop(), undefined);
+
+		stack.push(1);
+		stack.push(2);
+		stack.push(3);
+
+		const removedElement = stack.pop();
+
+		assert.equal(removedElement, 3);
+		assert.equal(stack.peek(), 2);
+		assert.equal(stack.size(), 2);
+	});
 });

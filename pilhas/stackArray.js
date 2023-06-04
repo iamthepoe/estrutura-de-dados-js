@@ -18,4 +18,8 @@ export class stackArray {
 	isEmpty() {
 		return this.items.length === 0;
 	}
+
+	clear() {
+		this.items = [];
+	}
 }

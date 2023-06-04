@@ -31,4 +31,15 @@ describe('stackObject', () => {
 		assert.equal(stack.peek(), 2);
 		assert.equal(stack.size(), 2);
 	});
+
+	it('should return the top element of the stack without removing it', () => {
+		assert.equal(stack.peek(), undefined);
+
+		stack.push(1);
+		stack.push(2);
+		stack.push(3);
+
+		assert.equal(stack.peek(), 3);
+		assert.equal(stack.size(), 3);
+	});
 });

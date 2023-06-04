@@ -47,5 +47,7 @@ describe('stackObject', () => {
 		assert.equal(stack.isEmpty(), true);
 		stack.push(1);
 		assert.equal(stack.isEmpty(), false);
+		stack.pop();
+		assert.equal(stack.isEmpty(), true);
 	});
 });

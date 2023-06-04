@@ -10,6 +10,7 @@ export class stackObject {
 	}
 
 	pop() {
+		if (this.isEmpty()) return undefined;
 		const item = this.items[this.count];
 		delete this.items[this.count];
 		this.count--;

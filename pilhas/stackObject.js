@@ -8,4 +8,8 @@ export class stackObject {
 		this.items[this.count] = element;
 		this.count++;
 	}
+
+	isEmpty() {
+		return this.count === 0;
+	}
 }

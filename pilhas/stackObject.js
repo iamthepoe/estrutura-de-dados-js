@@ -17,6 +17,11 @@ export class stackObject {
 		return item;
 	}
 
+	peek() {
+		if (this.isEmpty()) return undefined;
+		return this.items[this.count - 1];
+	}
+
 	isEmpty() {
 		return this.count === 0;
 	}

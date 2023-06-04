@@ -16,4 +16,14 @@ describe('stackArray', () => {
 		assert.equal(stack.isEmpty(), false);
 		assert.equal(stack.peek(), 3);
 	});
+
+	it('should remove elements from the top of stack', () => {
+		stack.push(1, 2, 3);
+
+		stack.pop();
+
+		assert.equal(stack.size(), 2);
+		assert.equal(stack.isEmpty(), false);
+		assert.equal(stack.peek(), 2);
+	});
 });

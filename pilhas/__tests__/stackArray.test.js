@@ -26,4 +26,13 @@ describe('stackArray', () => {
 		assert.equal(stack.isEmpty(), false);
 		assert.equal(stack.peek(), 2);
 	});
+
+	it('should return the top element of the stack without removing it', () => {
+		stack.push(1, 2, 3);
+
+		const topElement = stack.peek();
+
+		assert.equal(topElement, 3);
+		assert.equal(stack.size(), 3);
+	});
 });

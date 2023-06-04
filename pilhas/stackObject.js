@@ -9,8 +9,8 @@ export class StackObject {
 
 	pop() {
 		if (this.isEmpty()) return undefined;
-		const item = this.#items[this.#count];
-		delete this.#items[this.#count];
+		const item = this.#items[this.#count - 1];
+		delete this.#items[this.#count - 1];
 		this.#count--;
 		return item;
 	}

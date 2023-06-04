@@ -76,4 +76,16 @@ describe('stackObject', () => {
 		assert.equal(stack.isEmpty(), true);
 		assert.equal(stack.size(), 0);
 	});
+
+	it('should stringify our stack', () => {
+		assert.equal(stack.toString(), '');
+
+		stack.push(1);
+		stack.push(2);
+		stack.push(3);
+
+		const stringStack = stack.toString();
+		assert.equal(typeof stringStack, 'string');
+		assert.equal(stringStack, '1, 2, 3');
+	});
 });

@@ -17,11 +17,12 @@ describe('stackArray', () => {
 		assert.equal(stack.peek(), 3);
 	});
 
-	it('should remove elements from the top of stack', () => {
+	it('should remove an element from the top of stack and return it', () => {
 		stack.push(1, 2, 3);
 
-		stack.pop();
+		const removedElement = stack.pop();
 
+		assert.equal(removedElement, 3);
 		assert.equal(stack.size(), 2);
 		assert.equal(stack.isEmpty(), false);
 		assert.equal(stack.peek(), 2);

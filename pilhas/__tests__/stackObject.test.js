@@ -42,4 +42,10 @@ describe('stackObject', () => {
 		assert.equal(stack.peek(), 3);
 		assert.equal(stack.size(), 3);
 	});
+
+	it('should check if the stack is empty', () => {
+		assert.equal(stack.isEmpty(), true);
+		stack.push(1);
+		assert.equal(stack.isEmpty(), false);
+	});
 });

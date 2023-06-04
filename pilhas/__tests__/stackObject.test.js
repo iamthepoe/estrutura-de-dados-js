@@ -65,4 +65,15 @@ describe('stackObject', () => {
 
 		assert.equal(stack.size(), 0);
 	});
+
+	it('should clear the stack', () => {
+		stack.push(1);
+		stack.push(2);
+		stack.push(3);
+
+		stack.clear();
+
+		assert.equal(stack.isEmpty(), true);
+		assert.equal(stack.size(), 0);
+	});
 });

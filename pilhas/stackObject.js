@@ -12,4 +12,8 @@ export class stackObject {
 	isEmpty() {
 		return this.count === 0;
 	}
+
+	clear() {
+		this.items = {};
+	}
 }

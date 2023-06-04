@@ -4,7 +4,7 @@ export class StackArray {
 	}
 
 	push(...elements) {
-		this.items.push(elements);
+		this.items.push(...elements);
 	}
 
 	pop() {

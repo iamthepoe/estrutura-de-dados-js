@@ -50,4 +50,19 @@ describe('stackObject', () => {
 		stack.pop();
 		assert.equal(stack.isEmpty(), true);
 	});
+
+	it('should return the size of the stack', () => {
+		stack.push(1);
+		stack.push(2);
+
+		assert.equal(stack.size(), 2);
+
+		stack.pop();
+
+		assert.equal(stack.size(), 1);
+
+		stack.clear();
+
+		assert.equal(stack.size(), 0);
+	});
 });

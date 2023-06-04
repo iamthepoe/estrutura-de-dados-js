@@ -13,6 +13,10 @@ export class stackObject {
 		return this.count === 0;
 	}
 
+	size() {
+		return this.count;
+	}
+
 	clear() {
 		this.items = {};
 	}

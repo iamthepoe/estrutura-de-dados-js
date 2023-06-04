@@ -7,6 +7,10 @@ it('should be defined', () => {
 	assert.ok(stackArray);
 });
 
+it('should return true if is empty', () => {
+	assert.equal(stackArray.isEmpty(), true);
+});
+
 it('should return the stack size', () => {
 	assert.equal(stackArray.size(), 0);
 });

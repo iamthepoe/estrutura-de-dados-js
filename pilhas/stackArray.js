@@ -1,1 +1,5 @@
-export class stackArray {}
+export class stackArray {
+	constructor() {
+		this.items = [];
+	}
+}

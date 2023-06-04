@@ -4,5 +4,5 @@ import { StackArray } from '../stackArray.js';
 const stackArray = new StackArray();
 
 it('should be defined', () => {
-	assert.ok(new StackArray());
+	assert.ok(stackArray);
 });

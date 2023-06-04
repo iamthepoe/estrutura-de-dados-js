@@ -11,6 +11,8 @@ export class stackObject {
 
 	pop() {
 		const item = this.items[this.count];
+		delete this.items[this.count];
+		this.count--;
 		return item;
 	}
 

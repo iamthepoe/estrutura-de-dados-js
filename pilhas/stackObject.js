@@ -9,6 +9,11 @@ export class stackObject {
 		this.count++;
 	}
 
+	pop() {
+		const item = this.items[this.count];
+		return item;
+	}
+
 	isEmpty() {
 		return this.count === 0;
 	}

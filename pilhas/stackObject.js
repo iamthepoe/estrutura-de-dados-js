@@ -1,8 +1,6 @@
 export class StackObject {
-	constructor() {
-		this.#count = 0;
-		this.#items = {};
-	}
+	#count = 0;
+	#items = {};
 
 	push(element) {
 		this.#items[this.#count] = element;

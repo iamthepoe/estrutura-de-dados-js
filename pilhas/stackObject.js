@@ -1,4 +1,4 @@
-export class stackObject {
+export class StackObject {
 	constructor() {
 		this.#count = 0;
 		this.#items = {};

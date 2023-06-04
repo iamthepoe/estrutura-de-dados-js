@@ -19,5 +19,6 @@ export class stackObject {
 
 	clear() {
 		this.items = {};
+		this.count = 0;
 	}
 }

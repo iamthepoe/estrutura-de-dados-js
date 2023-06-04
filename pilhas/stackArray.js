@@ -6,4 +6,8 @@ export class stackArray {
 	push(element) {
 		this.items.push(element);
 	}
+
+	pop() {
+		return this.items.pop();
+	}
 }

@@ -3,8 +3,8 @@ export class StackArray {
 		this.items = [];
 	}
 
-	push(element) {
-		this.items.push(element);
+	push(...elements) {
+		this.items.push(elements);
 	}
 
 	pop() {

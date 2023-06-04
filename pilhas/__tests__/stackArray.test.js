@@ -1,7 +1,6 @@
 import assert from 'node:assert';
 import { describe, beforeEach, it } from 'node:test';
 import { StackArray } from '../stackArray.js';
-const stackArray = new StackArray();
 
 describe('stackArray', () => {
 	let stack;

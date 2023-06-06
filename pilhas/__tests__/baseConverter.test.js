@@ -19,5 +19,9 @@ describe('baseConverter', () => {
 		it('should convert decimal 10 to octal', () => {
 			assert.equal(baseConverter(10, 8), '12');
 		});
+
+		it('should convert decimal 10 to hexadecimal', () => {
+			assert.equal(baseConverter(10, 16), 'A');
+		});
 	});
 });

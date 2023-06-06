@@ -10,4 +10,6 @@ describe('baseConverter', () => {
 	it('should return a string', () => {
 		assert.equal(typeof baseConverter(10, 2), 'string');
 	});
+
+	describe('conversions from decimal to various bases', () => {});
 });

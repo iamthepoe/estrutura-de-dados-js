@@ -27,5 +27,9 @@ describe('baseConverter', () => {
 		it('should convert decimal 255 to binary', () => {
 			assert.equal(baseConverter(255, 2), '11111111');
 		});
+
+		it('should convert decimal 255 to octal', () => {
+			assert.equal(baseConverter(255, 8), '377');
+		});
 	});
 });

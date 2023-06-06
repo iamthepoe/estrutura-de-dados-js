@@ -7,5 +7,9 @@ describe('decimalToBinary', () => {
 		assert.equal(typeof decimalToBinary(10), 'string');
 	});
 
-	describe('conversions from zero to ten', () => {});
+	describe('conversions from two to ten', () => {
+		it('should convert 2 to 10', () => {
+			assert.equal(decimalToBinary(2), '10');
+		});
+	});
 });

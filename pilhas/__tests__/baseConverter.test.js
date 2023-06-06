@@ -23,5 +23,9 @@ describe('baseConverter', () => {
 		it('should convert decimal 10 to hexadecimal', () => {
 			assert.equal(baseConverter(10, 16), 'A');
 		});
+
+		it('should convert decimal 255 to binary', () => {
+			assert.equal(baseConverter(255, 2), '11111111');
+		});
 	});
 });

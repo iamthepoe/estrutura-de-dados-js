@@ -1,6 +1,8 @@
 # Estrutura de dados e algoritmos com JavaScript
 
-<center><img src="https://img.shields.io/github/commit-activity/t/iamthepoe/estrutura-de-dados-js?style=for-the-badge"><img src="https://img.shields.io/github/last-commit/iamthepoe/estrutura-de-dados-js?style=for-the-badge"></center>
+<div align="center">
+<img src="https://img.shields.io/github/commit-activity/t/iamthepoe/estrutura-de-dados-js?style=for-the-badge"> <img src="https://img.shields.io/github/last-commit/iamthepoe/estrutura-de-dados-js?style=for-the-badge">
+</div>
 
 ## 📋 Índice
 
@@ -24,5 +26,7 @@ Além das operações básicas, outras operações comuns em uma pilha incluem *
 
 
 <hr>
-<center>Feito com ☕ e ❤ por Luca Poe</center>
+<div align="center">
+Feito com ☕ e ❤ por Luca Poe
+</div>
 

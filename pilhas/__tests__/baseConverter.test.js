@@ -31,5 +31,9 @@ describe('baseConverter', () => {
 		it('should convert decimal 255 to octal', () => {
 			assert.equal(baseConverter(255, 8), '377');
 		});
+
+		it('should convert decimal 255 to hexadecimal', () => {
+			assert.equal(baseConverter(255, 16), 'FF');
+		});
 	});
 });

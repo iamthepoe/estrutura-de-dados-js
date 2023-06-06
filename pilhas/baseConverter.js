@@ -20,3 +20,5 @@ const baseConverter = (decimalNumber, base) => {
 
 	return baseString;
 };
+
+export { baseConverter };

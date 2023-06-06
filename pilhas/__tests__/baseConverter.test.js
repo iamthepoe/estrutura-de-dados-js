@@ -15,5 +15,9 @@ describe('baseConverter', () => {
 		it('should convert decimal 10 to binary', () => {
 			assert.equal(baseConverter(10, 2), '1010');
 		});
+
+		it('should convert decimal 10 to octal', () => {
+			assert.equal(baseConverter(10, 8), '12');
+		});
 	});
 });

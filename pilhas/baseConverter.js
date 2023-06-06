@@ -13,4 +13,8 @@ const baseConverter = (decimalNumber, base) => {
 		stack.push(rem);
 		decimalNumber = Math.floor(decimalNumber / base);
 	}
+
+	while (!stack.isEmpty()) {
+		baseString += digits[stack.pop()];
+	}
 };

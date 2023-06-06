@@ -11,5 +11,9 @@ describe('baseConverter', () => {
 		assert.equal(typeof baseConverter(10, 2), 'string');
 	});
 
-	describe('conversions from decimal to various bases', () => {});
+	describe('conversions from decimal to various bases', () => {
+		it('should convert decimal 10 to binary', () => {
+			assert.equal(baseConverter(10, 2), '1010');
+		});
+	});
 });

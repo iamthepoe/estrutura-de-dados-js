@@ -1,6 +1,6 @@
 # Estrutura de dados e algoritmos com JavaScript
 
-<center><img src="https://img.shields.io/github/commit-activity/t/iamthepoe/estrutura-de-dados-js?style=for-the-badge"> <img src="https://img.shields.io/github/last-commit/iamthepoe/estrutura-de-dados-js?style=for-the-badge"></center>
+<center><img src="https://img.shields.io/github/commit-activity/t/iamthepoe/estrutura-de-dados-js?style=for-the-badge"><img src="https://img.shields.io/github/last-commit/iamthepoe/estrutura-de-dados-js?style=for-the-badge"></center>
 
 ## 📋 Índice
 

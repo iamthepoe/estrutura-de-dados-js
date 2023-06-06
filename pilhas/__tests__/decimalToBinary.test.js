@@ -4,6 +4,6 @@ import { decimalToBinary } from '../decimalToBinary.js';
 
 describe('decimalToBinary', () => {
 	it('should return a string', () => {
-		decimalToBinary(10);
+		assert.equal(typeof decimalToBinary(10), 'string');
 	});
 });

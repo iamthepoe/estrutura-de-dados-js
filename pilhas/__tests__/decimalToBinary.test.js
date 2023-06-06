@@ -35,5 +35,9 @@ describe('decimalToBinary', () => {
 		it('should convert 8 to 1000', () => {
 			assert.equal(decimalToBinary(8), '1000');
 		});
+
+		it('should convert 9 to 1001', () => {
+			assert.equal(decimalToBinary(9), '1001');
+		});
 	});
 });

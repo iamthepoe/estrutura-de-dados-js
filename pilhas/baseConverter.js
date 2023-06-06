@@ -7,4 +7,10 @@ const baseConverter = (decimalNumber, base) => {
 	let rem;
 	let baseString = ' ';
 	if (!(base >= 2 && base <= 36)) return '';
+
+	while (decimalNumber > 0) {
+		rem = Math.floor(decimalNumber % base);
+		stack.push(rem);
+		decimalNumber = Math.floor(decimalNumber / base);
+	}
 };

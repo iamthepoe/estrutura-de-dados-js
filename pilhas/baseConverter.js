@@ -5,7 +5,7 @@ const stack = new StackObject();
 
 const baseConverter = (decimalNumber, base) => {
 	let rem;
-	let baseString = ' ';
+	let baseString = '';
 	if (!(base >= 2 && base <= 36)) return '';
 
 	while (decimalNumber > 0) {

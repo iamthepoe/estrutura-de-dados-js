@@ -9,11 +9,11 @@ const decimalToBinary = (decimalNumber) => {
 		remStack.push(rem);
 		decimalNumber = Math.floor(decimalNumber / 2);
 	}
-	let size = remStack.size();
-	for (let i = 0; i < size; i++) {
-		toStringBinary += String(remStack.pop());
+
+	while (!remStack.isEmpty()) {
+		toStringBinary += remStack.pop().toString();
 	}
 	return toStringBinary;
 };
 
-console.log(decimalToBinary(10));
+export { decimalToBinary };

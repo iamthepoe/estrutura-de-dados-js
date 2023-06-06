@@ -23,5 +23,9 @@ describe('decimalToBinary', () => {
 		it('should convert 5 to 101', () => {
 			assert.equal(decimalToBinary(5), '101');
 		});
+
+		it('should convert 6 to 110', () => {
+			assert.equal(decimalToBinary(6), '110');
+		});
 	});
 });

@@ -17,4 +17,6 @@ const baseConverter = (decimalNumber, base) => {
 	while (!stack.isEmpty()) {
 		baseString += digits[stack.pop()];
 	}
+
+	return baseString;
 };

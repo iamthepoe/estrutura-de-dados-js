@@ -6,4 +6,8 @@ describe('baseConverter', () => {
 	it('should be defined', () => {
 		assert.ok(baseConverter);
 	});
+
+	it('should return a string', () => {
+		assert.equal(typeof baseConverter(10, 2), 'string');
+	});
 });

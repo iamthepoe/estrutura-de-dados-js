@@ -8,6 +8,10 @@ export class Queue {
 		this.#count++;
 	}
 
+	dequeue() {
+		if (this.isEmpty()) return undefined;
+	}
+
 	size() {
 		return this.#count - this.#lowestCount;
 	}

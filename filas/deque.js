@@ -3,6 +3,11 @@ export class Deque {
 	#lowestCount = 0;
 	#items = {};
 
+	addBack(element) {
+		this.#items[this.#count] = element;
+		this.#count++;
+	}
+
 	size() {
 		return this.#count - this.#lowestCount;
 	}

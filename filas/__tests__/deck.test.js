@@ -7,4 +7,8 @@ describe('Deck', () => {
 	beforeEach(() => {
 		deck = new Deck();
 	});
+
+	it('should be defined', () => {
+		assert.ok(deck);
+	});
 });

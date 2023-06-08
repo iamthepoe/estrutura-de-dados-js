@@ -21,6 +21,15 @@ describe('Queue', () => {
 		assert.equal(queue.peek(), 1);
 	});
 
+	it('should return the first element of the queue without removing it', () => {
+		assert.equal(queue.peek(), undefined);
+		queue.enqueue(1);
+		queue.enqueue(2);
+		queue.enqueue(3);
+		assert.equal(queue.peek(), 1);
+		assert.equal(queue.size(), 3);
+	});
+
 	it('should return the size of queue', () => {
 		assert.equal(queue.size(), 0);
 		queue.enqueue(1);

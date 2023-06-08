@@ -7,4 +7,8 @@ describe('Queue', () => {
 	beforeEach(() => {
 		queue = new Queue();
 	});
+
+	it('should be defined', () => {
+		assert.ok(queue);
+	});
 });

@@ -11,4 +11,13 @@ describe('Queue', () => {
 	it('should be defined', () => {
 		assert.ok(queue);
 	});
+
+	it('should add elements in the queue', () => {
+		queue.enqueue(1);
+		queue.enqueue(2);
+		queue.enqueue(3);
+
+		assert.ok(queue.size(), 3);
+		assert.ok(queue.peek(), 1);
+	});
 });

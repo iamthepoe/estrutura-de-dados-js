@@ -29,4 +29,12 @@ describe('Queue', () => {
 		queue.dequeue();
 		assert.equal(queue.size(), 1);
 	});
+
+	it('should verify if queue is empty', () => {
+		assert.equal(queue.isEmpty(), true);
+		queue.enqueue(1);
+		assert.equal(queue.isEmpty(), false);
+		queue.dequeue();
+		assert.equal(queue.isEmpty(), true);
+	});
 });

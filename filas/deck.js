@@ -1,4 +1,4 @@
-export class Deque {
+export class Deck {
 	#count = 0;
 	#lowestCount = 0;
 	#items = {};

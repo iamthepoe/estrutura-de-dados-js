@@ -7,4 +7,8 @@ export class Queue {
 		this.#items[this.#count] = element;
 		this.#count++;
 	}
+
+	isEmpty() {
+		return this.size() === 0;
+	}
 }

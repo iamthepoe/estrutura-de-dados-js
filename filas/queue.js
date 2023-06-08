@@ -29,4 +29,10 @@ export class Queue {
 	isEmpty() {
 		return this.size() === 0;
 	}
+
+	clear() {
+		this.#count = 0;
+		this.#lowestCount = 0;
+		this.#items = {};
+	}
 }

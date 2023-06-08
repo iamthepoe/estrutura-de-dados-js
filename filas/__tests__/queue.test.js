@@ -17,7 +17,16 @@ describe('Queue', () => {
 		queue.enqueue(2);
 		queue.enqueue(3);
 
-		assert.ok(queue.size(), 3);
-		assert.ok(queue.peek(), 1);
+		assert.equal(queue.size(), 3);
+		assert.equal(queue.peek(), 1);
+	});
+
+	it('should return the size of queue', () => {
+		assert.equal(queue.size(), 0);
+		queue.enqueue(1);
+		queue.enqueue(2);
+		assert.equal(queue.size(), 2);
+		queue.dequeue();
+		assert.equal(queue.size(), 1);
 	});
 });

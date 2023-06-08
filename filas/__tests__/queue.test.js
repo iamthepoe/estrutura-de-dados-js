@@ -61,6 +61,18 @@ describe('Queue', () => {
 		assert.equal(queue.isEmpty(), true);
 	});
 
+	it('should stringify our queue', () => {
+		assert.equal(queue.toString(), '');
+
+		queue.enqueue(1);
+		queue.enqueue(2);
+		queue.enqueue(3);
+
+		const stringQueue = queue.toString();
+		assert.equal(typeof stringQueue, 'string');
+		assert.equal(stringQueue, '1,2,3');
+	});
+
 	it('should clear the queue', () => {
 		queue.enqueue(1);
 		queue.enqueue(2);

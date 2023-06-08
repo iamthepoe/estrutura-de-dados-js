@@ -17,6 +17,11 @@ export class Queue {
 		return element;
 	}
 
+	peek() {
+		if (this.isEmpty()) return undefined;
+		return this.#items[this.#lowestCount];
+	}
+
 	size() {
 		return this.#count - this.#lowestCount;
 	}

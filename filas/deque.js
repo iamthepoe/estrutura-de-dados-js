@@ -22,6 +22,11 @@ export class Deque {
 		return this.#items[this.#lowestCount];
 	}
 
+	peekBack() {
+		if (this.isEmpty()) return undefined;
+		return this.#items[this.#count - 1];
+	}
+
 	size() {
 		return this.#count - this.#lowestCount;
 	}

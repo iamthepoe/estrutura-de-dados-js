@@ -21,6 +21,20 @@ describe('Queue', () => {
 		assert.equal(queue.peek(), 1);
 	});
 
+	it('should remove the first element of queue and return it', () => {
+		assert.equal(queue.dequeue(), undefined);
+
+		queue.enqueue(1);
+		queue.enqueue(2);
+		queue.enqueue(3);
+
+		const removedElement = queue.dequeue();
+
+		assert.equal(removedElement, 1);
+		assert.equal(queue.peek(), 2);
+		assert.equal(queue.size(), 2);
+	});
+
 	it('should return the first element of the queue without removing it', () => {
 		assert.equal(queue.peek(), undefined);
 		queue.enqueue(1);

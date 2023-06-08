@@ -17,6 +17,14 @@ export class Deque {
 		return element;
 	}
 
+	removeBack() {
+		if (this.isEmpty()) return undefined;
+		const item = this.#items[this.#count - 1];
+		delete this.#items[this.#count - 1];
+		this.#count--;
+		return item;
+	}
+
 	peekFront() {
 		if (this.isEmpty()) return undefined;
 		return this.#items[this.#lowestCount];

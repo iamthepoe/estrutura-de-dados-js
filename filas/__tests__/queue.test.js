@@ -37,4 +37,14 @@ describe('Queue', () => {
 		queue.dequeue();
 		assert.equal(queue.isEmpty(), true);
 	});
+
+	it('should clear the queue', () => {
+		queue.enqueue(1);
+		queue.enqueue(2);
+
+		queue.clear();
+
+		assert.equal(queue.isEmpty(), true);
+		assert.equal(queue.peek(), undefined);
+	});
 });

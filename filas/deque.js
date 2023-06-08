@@ -17,6 +17,11 @@ export class Deque {
 		return element;
 	}
 
+	peekFront() {
+		if (this.isEmpty()) return undefined;
+		return this.#items[this.#lowestCount];
+	}
+
 	size() {
 		return this.#count - this.#lowestCount;
 	}

@@ -10,6 +10,11 @@ export class Queue {
 
 	dequeue() {
 		if (this.isEmpty()) return undefined;
+
+		const element = this.#items[this.#lowestCount];
+		delete this.#items[this.#lowestCount];
+		this.#lowestCount++;
+		return element;
 	}
 
 	size() {

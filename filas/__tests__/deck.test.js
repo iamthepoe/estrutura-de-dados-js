@@ -12,6 +12,15 @@ describe('Deck', () => {
 		assert.ok(deck);
 	});
 
+	it('should return the size of deck', () => {
+		assert.equal(deck.size(), 0);
+		deck.addBack(1);
+		deck.addBack(2);
+		assert.equal(deck.size(), 2);
+		deck.removeFront();
+		assert.equal(deck.size(), 1);
+	});
+
 	it('should clear the deck', () => {
 		deck.addBack(1);
 		deck.addBack(2);

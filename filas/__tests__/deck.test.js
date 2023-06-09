@@ -29,6 +29,18 @@ describe('Deck', () => {
 		assert.equal(deck.isEmpty(), true);
 	});
 
+	it('should stringify our deck', () => {
+		assert.equal(deck.toString(), '');
+
+		deck.addBack(1);
+		deck.addBack(2);
+		deck.addBack(3);
+
+		const stringQueue = deck.toString();
+		assert.equal(typeof stringQueue, 'string');
+		assert.equal(stringQueue, '1,2,3');
+	});
+
 	it('should clear the deck', () => {
 		deck.addBack(1);
 		deck.addBack(2);

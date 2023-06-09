@@ -12,6 +12,20 @@ describe('Deck', () => {
 		assert.ok(deck);
 	});
 
+	it('should remove the last element of deck and return it', () => {
+		assert.equal(deck.removeBack(), undefined);
+		deck.addBack(1);
+		deck.addBack(2);
+		deck.addBack(3);
+
+		const removedElement = deck.removeBack();
+
+		assert.equal(removedElement, 3);
+		assert.equal(deck.peekFront(), 1);
+		assert.equal(deck.peekBack(), 2);
+		assert.equal(deck.size(), 2);
+	});
+
 	it('should remove the first element of deck and return it', () => {
 		assert.equal(deck.removeFront(), undefined);
 		deck.addBack(1);

@@ -21,6 +21,14 @@ describe('Deck', () => {
 		assert.equal(deck.size(), 1);
 	});
 
+	it('should verify if deck is empty', () => {
+		assert.equal(deck.isEmpty(), true);
+		deck.addBack(1);
+		assert.equal(deck.isEmpty(), false);
+		deck.removeFront();
+		assert.equal(deck.isEmpty(), true);
+	});
+
 	it('should clear the deck', () => {
 		deck.addBack(1);
 		deck.addBack(2);

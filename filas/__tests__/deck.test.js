@@ -11,4 +11,14 @@ describe('Deck', () => {
 	it('should be defined', () => {
 		assert.ok(deck);
 	});
+
+	it('should clear the deck', () => {
+		deck.addBack(1);
+		deck.addBack(2);
+
+		deck.clear();
+
+		assert.equal(deck.isEmpty(), true);
+		assert.equal(deck.peekFront(), undefined);
+	});
 });

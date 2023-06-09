@@ -12,6 +12,21 @@ describe('Deck', () => {
 		assert.ok(deck);
 	});
 
+	it('should add elements in the front of deck', () => {
+		deck.addFront(1);
+		deck.addBack(2);
+		deck.addFront(3);
+
+		assert.equal(deck.size(), 3);
+		assert.equal(deck.peekFront(), 3);
+
+		deck.clear();
+
+		deck.addFront(1);
+		assert.equal(deck.size(), 1);
+		assert.equal(deck.peekFront(), 1);
+	});
+
 	it('should add elements in the back of deck', () => {
 		deck.addBack(1);
 		deck.addBack(2);

@@ -12,6 +12,15 @@ describe('Deck', () => {
 		assert.ok(deck);
 	});
 
+	it('should add elements in the back of deck', () => {
+		deck.addBack(1);
+		deck.addBack(2);
+		deck.addBack(3);
+
+		assert.equal(deck.size(), 3);
+		assert.equal(deck.peekBack(), 3);
+	});
+
 	it('should remove the last element of deck and return it', () => {
 		assert.equal(deck.removeBack(), undefined);
 		deck.addBack(1);

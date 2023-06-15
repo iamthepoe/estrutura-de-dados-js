@@ -1,0 +1,1 @@
+const hotPotato = (elementList, num) => {};

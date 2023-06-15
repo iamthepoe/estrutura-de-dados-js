@@ -7,4 +7,11 @@ const hotPotato = (elementList, num) => {
 	elementList.forEach((element) => {
 		queue.enqueue(element);
 	});
+
+	while (queue.size() > 1) {
+		for (let i = 0; i < num; i++) {
+			queue.enqueue(queue.dequeue);
+		}
+		eliminatedList.push(queue.dequeue());
+	}
 };

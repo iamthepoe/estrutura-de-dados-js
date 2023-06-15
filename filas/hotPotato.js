@@ -2,7 +2,7 @@ import { Queue } from './queue.js';
 
 const hotPotato = (elementList, num) => {
 	const queue = new Queue();
-	const eliminatedList = [];
+	const eliminated = [];
 
 	elementList.forEach((element) => {
 		queue.enqueue(element);
@@ -12,6 +12,11 @@ const hotPotato = (elementList, num) => {
 		for (let i = 0; i < num; i++) {
 			queue.enqueue(queue.dequeue);
 		}
-		eliminatedList.push(queue.dequeue());
+		eliminated.push(queue.dequeue());
 	}
+
+	return {
+		eliminated,
+		winner: queue.dequeue(),
+	};
 };

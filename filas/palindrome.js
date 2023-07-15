@@ -1,6 +1,6 @@
 import { Deck } from "./deck.js";
 
-export const palindromeChecker = (aString) => {
+export const isPalindrome = (aString) => {
   if (!aString) return false;
 
   const deck = new Deck();

@@ -5,7 +5,7 @@ export const palindromeChecker = (aString) => {
 
   const deck = new Deck();
 
-  const lowerString = aString.toLocaleLowerCase().trim();
+  const lowerString = aString.toLocaleLowerCase().replace(' ', '');
   let isEqual = true;
   let firstChar, lastChar;
   for (let i = 0; i < lowerString.length; i++) {

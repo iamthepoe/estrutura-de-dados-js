@@ -7,6 +7,14 @@ describe('palindrome', () => {
     assert.ok(isPalindrome('arara'));
     assert.ok(isPalindrome('Subi no onibus'));
     assert.ok(isPalindrome('step on no pets'));
-    assert.ok(isPalindrome('kayak'));
+    assert.ok(isPalindrome('jooj'));
   });
+
+  it('should return false', () => {
+    assert.ok(!isPalindrome('ararssa'));
+    assert.ok(!isPalindrome('TIBATIBATIBATIBATIBA'));
+    assert.ok(!isPalindrome('jooji'));
+    assert.ok(!isPalindrome('toma'));
+  });
+
 });

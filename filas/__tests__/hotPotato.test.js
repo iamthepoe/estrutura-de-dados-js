@@ -18,6 +18,6 @@ describe('hotPotato', () => {
   it('should no one be the winner', () => {
     const names = [];
     const result = hotPotato(names, 1);
-    assert.equal(result.winner, '');
+    assert.equal(result.winner, undefined);
   })
 });

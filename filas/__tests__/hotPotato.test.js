@@ -8,4 +8,10 @@ describe('hotPotato', () => {
     const result = hotPotato(names, 7);
     assert.equal(result.winner, 'John');
   });
+
+  it('should Maria be the winner', () => {
+    const names = ['Maria', 'Mary', 'Mariana'];
+    const result = hotPotato(names, 5);
+    assert.equal(result.winner, 'Maria');
+  })
 });

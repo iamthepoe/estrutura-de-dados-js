@@ -13,5 +13,11 @@ describe('hotPotato', () => {
     const names = ['Maria', 'Mary', 'Mariana'];
     const result = hotPotato(names, 5);
     assert.equal(result.winner, 'Maria');
+  });
+
+  it('should no one be the winner', () => {
+    const names = [];
+    const result = hotPotato(names, 1);
+    assert.equal(result.winner, '');
   })
 });

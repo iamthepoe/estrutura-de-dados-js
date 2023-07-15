@@ -21,4 +21,3 @@ export const hotPotato = (elementList, num) => {
   };
 };
 
-console.log(hotPotato(['a', 'b'], 3));

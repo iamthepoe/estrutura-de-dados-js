@@ -1,47 +1,47 @@
 export class Queue {
-	#count = 0;
-	#lowestCount = 0;
-	#items = {};
+  #count = 0;
+  #lowestCount = 0;
+  #items = {};
 
-	enqueue(element) {
-		this.#items[this.#count] = element;
-		this.#count++;
-	}
+  enqueue(element) {
+    this.#items[this.#count] = element;
+    this.#count++;
+  }
 
-	dequeue() {
-		if (this.isEmpty()) return undefined;
+  dequeue() {
+    if (this.isEmpty()) return undefined;
 
-		const element = this.#items[this.#lowestCount];
-		delete this.#items[this.#lowestCount];
-		this.#lowestCount++;
-		return element;
-	}
+    const element = this.#items[this.#lowestCount];
+    delete this.#items[this.#lowestCount];
+    this.#lowestCount++;
+    return element;
+  }
 
-	peek() {
-		if (this.isEmpty()) return undefined;
-		return this.#items[this.#lowestCount];
-	}
+  peek() {
+    if (this.isEmpty()) return undefined;
+    return this.#items[this.#lowestCount];
+  }
 
-	size() {
-		return this.#count - this.#lowestCount;
-	}
+  size() {
+    return this.#count - this.#lowestCount;
+  }
 
-	isEmpty() {
-		return this.size() === 0;
-	}
+  isEmpty() {
+    return this.size() === 0;
+  }
 
-	clear() {
-		this.#count = 0;
-		this.#lowestCount = 0;
-		this.#items = {};
-	}
+  clear() {
+    this.#count = 0;
+    this.#lowestCount = 0;
+    this.#items = {};
+  }
 
-	toString() {
-		if (this.isEmpty()) return '';
-		let objString = `${this.#items[this.#lowestCount]}`;
-		for (let i = this.#lowestCount + 1; i < this.#count; i++) {
-			objString = `${objString},${this.#items[i]}`;
-		}
-		return objString;
-	}
+  toString() {
+    if (this.isEmpty()) return '';
+    let objString = `${this.#items[this.#lowestCount]}`;
+    for (let i = this.#lowestCount + 1; i < this.#count; i++) {
+      objString = `${objString},${this.#items[i]}`;
+    }
+    return objString;
+  }
 }

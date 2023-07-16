@@ -1,19 +1,19 @@
-import { Deck } from "./deck.js";
+import { Deque } from "./deque.js";
 
 export const isPalindrome = (aString) => {
   if (!aString) return false;
 
-  const deck = new Deck();
+  const deque = new Deque();
 
   const lowerString = aString.toLowerCase().replaceAll(' ', '');
   let isEqual = true;
   let firstChar, lastChar;
   for (let i = 0; i < lowerString.length; i++) {
-    deck.addBack(lowerString.charAt(i));
+    deque.addBack(lowerString.charAt(i));
   }
-  while (deck.size() > 1 && isEqual) {
-    firstChar = deck.removeFront();
-    lastChar = deck.removeBack();
+  while (deque.size() > 1 && isEqual) {
+    firstChar = deque.removeFront();
+    lastChar = deque.removeBack();
     if (firstChar !== lastChar) isEqual = false;
   }
   return isEqual;

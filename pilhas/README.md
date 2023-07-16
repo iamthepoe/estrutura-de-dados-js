@@ -19,6 +19,7 @@ Uma pilha é uma coleção de elementos organizados de forma linear, seguindo o 
  <img src="https://freesvg.org/img/1488216538.png" width="200px">
 </div>
 <br>
+
 A pilha possui duas operações fundamentais: **push** (inserção) e **pop** (remoção). A operação push **adiciona um elemento ao topo da pilha**, deslocando os elementos existentes para baixo, enquanto a operação pop **remove o elemento mais recente**, que está no topo da pilha, e ajusta a posição dos demais elementos.
 
 Além das operações básicas, outras operações comuns em uma pilha incluem **peek** (espiar) e **isEmpty** (verificar se a pilha está vazia). A operação peek permite **visualizar o elemento no topo da pilha sem removê-lo**, enquanto a operação isEmpty **retorna verdadeiro se a pilha estiver vazia e falso caso contrário.**

@@ -1,5 +1,5 @@
 import assert from 'node:assert';
-import { beforeEach, describe, it } from 'node:test'
+import { describe, it } from 'node:test'
 import { isPalindrome } from '../palindrome.js';
 
 describe('palindrome', () => {

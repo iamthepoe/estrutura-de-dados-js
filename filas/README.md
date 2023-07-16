@@ -77,7 +77,7 @@ export class Queue {
 
 ## 🎲 Algoritmos com fila
 
-- **Hot Potato**: um algoritmo que simula o jogo de batata quente utilizando uma fila circular. [Link](https://github.com/iamthepoe/estrutura-de-dados-js/blob/main/filas/hotPotato.js)
+- **Hot Potato**: um algoritmo que simula o <a target="_blank" href="https://pt.wikipedia.org/wiki/Batata-quente">jogo de batata quente</a> utilizando uma fila circular. [Link](https://github.com/iamthepoe/estrutura-de-dados-js/blob/main/filas/hotPotato.js)
 - **Testes**: pasta com os testes automatizados de cada algoritmo. [Link](https://github.com/iamthepoe/estrutura-de-dados-js/tree/main/filas/__tests__)
 
 
